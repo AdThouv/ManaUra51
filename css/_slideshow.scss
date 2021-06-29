@@ -1,0 +1,41 @@
+#galerie {
+  .column,
+  .columnReverse {
+    position: relative;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .equipe {
+      position: absolute;
+      height: 550px;
+      width: auto;
+      display:flex;
+      p{
+        padding:40px;
+      }
+    }
+
+    .container_dot {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 6px;
+      background-color: #000000;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .active,
+    .dot:hover {
+      background-color: white;
+      opacity: 1;
+    }
+  }
+}

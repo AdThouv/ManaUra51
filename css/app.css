@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+}
+
+ul li {
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+body {
+  background: url(../image/polynesia-3021072.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+body .header .marque .logo img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 200px;
+}
+
+body .header .nav {
+  width: 100%;
+  padding: 50px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+body .header .nav .menu-bar {
+  border-radius: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+body .header .nav .menu-bar li {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+body .header .nav .menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 25px;
+}
+
+body .header .nav .menu-bar li:hover::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e8edec), to(#d2d1d3));
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  -webkit-box-shadow: 0px 3px 20px 0px black;
+          box-shadow: 0px 3px 20px 0px black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .header .nav .menu-bar li:hover a {
+  color: black;
+}
+
+body .header .nav .menu-bar li a {
+  text-decoration: none;
+  color: white;
+}
+
+body p strong {
+  color: grey;
+}
+
+.adress a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.adress .sociaux .facebook img {
+  width: 20px;
+  padding: 0;
+  margin: 20px auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  width: 830px;
+  margin: 20px auto;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  row-gap: 10px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.grid img {
+  width: 200px;
+  height: 150px;
+}
+
+#galerie .column,
+#galerie .columnReverse {
+  position: relative;
+  height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#galerie .column .equipe,
+#galerie .columnReverse .equipe {
+  position: absolute;
+  height: 550px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#galerie .column .equipe p,
+#galerie .columnReverse .equipe p {
+  padding: 40px;
+}
+
+#galerie .column .container_dot,
+#galerie .columnReverse .container_dot {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+}
+
+#galerie .column .dot,
+#galerie .columnReverse .dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 6px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#galerie .column .active,
+#galerie .column .dot:hover,
+#galerie .columnReverse .active,
+#galerie .columnReverse .dot:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+.container {
+  width: 70%;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  top: 200px;
+  z-index: 9998;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .column img {
+  width: 50%;
+  padding: 40px;
+}
+
+.container .column .textHome {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .columnReverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .columnReverse img {
+  width: 50%;
+  padding: 40px;
+}
+
+.container .columnReverse .textHome {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=app.css.map */
