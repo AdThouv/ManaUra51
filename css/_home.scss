@@ -14,6 +14,7 @@ body {
     .marque {
       .logo {
         img {
+          padding: 20px;
           transition: 500ms;
           width: 200px;
         }
@@ -76,4 +77,78 @@ body {
       color: grey;
     }
   }
+}
+@media (min-width: 320px){
+  body {
+
+    .header {
+      position:fixed;
+   
+      .marque {
+        width:100%;
+        .logo {
+          display:flex;
+          justify-content: center;
+          opacity:1;
+          transition: 500ms;
+          img {
+         
+          }
+        }
+      }
+      .nav {
+        opacity:0;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding:0;
+        position:fixed;
+        left:-320px;
+        background:black;
+        transition:500ms;
+        bottom:0;
+        top:0;
+        img{
+          width:200px;
+          padding:20px;
+        }
+        .menu-bar {
+          display:flex;
+          flex-direction: column;
+     
+          li {
+
+            &::before {
+
+            }
+            &:hover {
+              &::before {
+        
+              }
+              a {
+             
+              }
+            }
+            a {
+             
+            }
+          }
+        }
+      }
+      footer{
+        display:none;
+      }
+
+    }
+    p{
+      strong{
+      
+      }
+    }
+  }
+
+
+
+
+
 }
